@@ -1,0 +1,738 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+    background: url("images/02Background.jpg") no-repeat center center fixed;
+  /* background: url("https://drive.google.com/thumbnail?id=15rFll3ag66SUuiTJFfsiSuEQ4Y52yDNj&sz=w1000") no-repeat center center fixed; */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* NAVBAR STYLE START ------------------------------------------------------ */
+.navbar {
+  background-color: #0d6efd !important;
+  height: 45px;
+}
+
+.navbar-toggler-icon {
+  position: absolute;
+  top: 15%;
+  right: 4%;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 1%;
+  left: 4%;
+}
+
+/* Nav underline effect */
+.navbar-nav .nav-link,
+.dropdown-item,
+.footer a {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.navbar-nav .nav-link::after,
+.dropdown-item::after,
+.footer a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 200% 100%;
+  transition: width 0.4s ease, left 0.4s ease;
+  transform: translateX(-50%);
+  animation: rainbowSlide 3s linear infinite;
+}
+
+
+@keyframes rainbowSlide {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.navbar-nav .nav-link:hover::after,
+.dropdown-item:hover::after,
+.footer a:hover::after,
+.navbar-nav .nav-link.active::after,
+.dropdown-item.active::after,
+.footer a.active::after {
+  width: 100%;
+  left: 0;
+  transform: none;
+}
+
+
+/* Offcanvas mobile width */
+@media(max-width:767px) {
+  .offcanvas-start {
+    width: 65% !important;
+  }
+}
+
+.offcanvas-header {
+  height: 43px !important;
+  padding: 5px 10px;
+}
+
+/* NAVBAR STYLE CLOSE ------------------------------------------------------ */
+
+
+
+
+
+/* //   Header STYLE START............................................// */
+
+.carousel-container {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  /* margin-top: 1px; */
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide img.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* Buttons - Desktop look */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.4);
+  /* हल्का transparent white */
+  color: #000;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.carousel-btn.prev {
+  left: 0;
+  border-radius: 0 50% 50% 0;
+  /* half-circle */
+}
+
+.carousel-btn.next {
+  right: 0;
+  border-radius: 50% 0 0 50%;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile look → transparent only arrows */
+@media (max-width: 768px) {
+  .carousel-btn {
+    background: none !important;
+    /* remove bg */
+    color: white;
+    /* arrow white */
+    font-size: 24px;
+    /* bigger arrow */
+    padding: 6px;
+    /* compact */
+  }
+}
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.carousel-dots button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.carousel-dots button.active {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .carousel-dots button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+/* //   Header STYLE CLOSE............................................ */
+
+
+
+
+
+
+/* //   welcome STYLE start............................................ */
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 1000% 1000%;
+  animation: rainbowBG 6s ease infinite;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.6em;
+  text-shadow: 0 0 5px #fff,
+    0 0 10px #ff00de,
+    0 0 20px #ff00de,
+    0 0 40px #ff00de,
+    0 0 80px #ff00de;
+  padding-right: 50px;
+  /* text के बीच gap */
+}
+
+.scroll-wrapper {
+  display: inline-block;
+  animation: scroll-left 6s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rainbowBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* //   welcome STYLE close............................................ */
+
+
+
+
+
+
+/* //   add STYLE start............................................ */
+
+.custom-item {
+  background: #DEB887;
+  /* Background color */
+  border: 2px solid #333;
+  /* Border */
+  padding: 20px;
+  /* Padding */
+  border-radius: 10px;
+  /* Curve border */
+  text-align: center;
+  /* Center text */
+  color: #fff;
+  font-size: 20px;
+
+  width: 98%;
+  /* width कम कर दी*/
+  /* marginx: auto;      center align */
+}
+
+/* .add {
+  margin-top: 2px;
+  margin-right: -5px;
+  padding: 1px 20px;
+} */
+
+
+.add {
+  margin-top: 2px;
+  padding: 1px 5px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* //   add STYLE close............................................ */
+
+
+
+
+
+
+/* //   read more STYLE start............................................ */
+
+.itemt {
+  max-width: 140px;
+  float: left;
+  margin: 1px 20px 5px 0;
+  text-align: center;
+
+}
+
+.Xreadmore {
+  margin: 5px auto;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  width: 98%;
+  background: hwb(120 98% 1%);
+
+}
+
+.readmore {
+  position: relative;
+  margin: 10px auto;
+  padding: 15px;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: justify;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+}
+
+
+
+
+.hidden-content {
+  display: none;
+}
+
+.read_more {
+  color: #61b1f1;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.read_more:hover {
+  color: #488ad6;
+  /* color: green; */
+}
+
+.hidden-readmore {
+  display: none;
+}
+
+.read_less {
+  color: #0f60bd;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+@keyframes rainbowBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
+
+/* Animated Rainbow Border */
+.readmore::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #00ffff,
+    #0000ff,
+    #8b00ff,
+    #ff0000
+  );
+  background-size: 300% 300%;
+  animation: rainbowBorder 5s linear infinite;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);          /* Standard */
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);          /* WebKit */
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+
+
+
+/* Mobile Responsive */
+@media (max-width:768px) {
+  .readmore {
+    width: 100%;
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .readmore::before {
+    border-radius: 12px;
+  }
+}
+
+
+/* //   read more STYLE close............................................ */
+
+
+
+
+
+
+
+
+/* //   Sadaysy STYLE start............................................ */
+.fourA {
+  width: 100%;
+  margin: auto;
+  /* text-decoration-color: red; */
+}
+
+.itemteem {
+  padding: 10px 0px;
+  margin: 10px;
+  color: green;
+  border-radius: 3px;
+  margin-bottom: -15px;
+  margin-top: 1px;
+}
+
+
+/* //   Sadaysy STYLE close............................................ */
+
+
+
+
+
+
+
+
+/* //   footer STYLE start............................................ */
+/* Footer */
+.bg-maroon {
+  background-color: #85144B !important;
+}
+
+.footer a {
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #ffd700 !important;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 45px;
+  transition: 0.3s;
+}
+
+.social-icon.fb {
+  background: #1877f2;
+}
+
+.social-icon.wa {
+  background: #25d366;
+}
+
+.social-icon.ph {
+  background: #ff9800;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+/* Fancy title */
+.fancy-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+
+  background: linear-gradient(90deg, #ffcc00, #fff, #ffcc00);
+  background-size: 200% auto;
+
+  /* Compatibility */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-text-stroke: 2px #b8860b;
+
+  text-shadow:
+    0 0 3px #fff,
+    0 0 6px #ffd700,
+    0 0 12px #ffdf00;
+
+  animation: shine 6s linear infinite;
+}
+
+
+
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+
+  100% {
+    background-position: -200% center;
+  }
+}
+
+/* //   footer  STYLE close............................................ */
+
+
+
+
+
+
+
+
+
+
+
+/* funct section start ...................... */
+.funct {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  width: 95%;
+  background: #f6f6f6;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.H {
+  border: 2px solid violet;
+  color: yellow;
+  margin: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.H:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.H h5 {
+  color: yellow;
+  font-weight: bold;
+}
+
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+/* funct section start ...................... */
+
+
+
+
+
+
+
+
+
+/* contact page start.......................... */
+
+.contact-page {
+  background: #f5f7fb;
+  padding: 30px 15px;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+  overflow: hidden;
+}
+
+.contact-header {
+  background: linear-gradient(135deg, #0d6efd, #3b82f6);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.contact-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.contact-header p {
+  margin-top: 10px;
+  opacity: .95;
+}
+
+.contact-body {
+  padding: 25px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.contact-icon {
+  font-size: 28px;
+  min-width: 40px;
+}
+
+.contact-item h2 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+  color: #0d6efd;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+.contact-item a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width:768px) {
+
+  .contact-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-body {
+    padding: 18px;
+  }
+
+  .contact-item {
+    padding: 12px;
+  }
+
+  .contact-icon {
+    font-size: 24px;
+  }
+
+  .contact-item h2 {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* contact page CLOSE.......................... */

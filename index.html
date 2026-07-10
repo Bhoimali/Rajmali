@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Title -->
+    <title>भोई माली समाज राजसमंद | Bhoi Mali Samaj Official Website</title>
+    <!-- <title>भोई माली समाज | राजसमंद</title> -->
+
+
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52CGNWF7LQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-52CGNWF7LQ');
+    </script>
+
+
+
+
+
+
+
+
+    <!-- SEO Description -->
+    <meta name="description" content="भोई माली समाज की आधिकारिक वेबसाइट | 
+      Official website of Bhoi Mali Samaj. Community news, members, gallery, events, contact information, 
+      समाज की जानकारी एवं सेवाएँ।">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="भोई माली समाज, Bhoi Mali Samaj, Bhoi Mali, Mali Samaj, भोई समाज, माली समाज, 
+      Bhoi Community, Rajasthan, समाज, Community">
+
+    <meta name="author" content="Bhoi Mali Samaj">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Hindi, English">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bhoimali.vercel.app/">
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="images/01Fevico-logo.png">
+
+    <!-- Open Graph (Facebook / WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="भोई माली समाज | Bhoi Mali Samaj">
+    <meta property="og:description" content="भोई माली समाज की आधिकारिक वेबसाइट | Official Website of Bhoi Mali Samaj.
+      भोई माली समाज राजसमंद की आधिकारिक वेबसाइट। परिवार दर्पण, विद्यार्थी दर्पण, समाज प्रदर्शिका, परिचय पत्र, फोटो गैलरी, जीवनसाथी, 
+      समाज सेवा समिति एवं अन्य ऑनलाइन सेवाएं उपलब्ध हैं। ">
+    <meta property="og:url" content="https://bhoimali.vercel.app/">
+    <!-- <meta property="og:image" content="https://bhoimali.vercel.app/logo.png"> -->
+    <meta property="og:site_name" content="Bhoi Mali Samaj">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="भोई माली समाज | Bhoi Mali Samaj">
+    <meta name="twitter:description" content="Official Website of Bhoi Mali Samaj">
+    <meta name="twitter:image" content="https://bhoimali.vercel.app/logo.png">
+
+    <!-- Theme -->
+    <!-- <meta name="theme-color" content="#0d6efd"> -->
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .content {
+            display: none;
+            padding: 0;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .main-content {
+            margin-top: 45px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img
+                    src="images/03Logo&Name-BhoiMaliSamaj-kbc8.png"
+                    alt="Bhoi Mali Samaj Logo" width="180" height="32"></a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-center fs-5">
+                    <li><a data-page="home" class="nav-link text-white active">Home</a></li>
+                    <li><a data-page="samajbook" class="nav-link text-white">Book</a></li>
+                    <li><a data-page="student" class="nav-link text-white">EduSathi</a></li>
+
+                    <li><a data-page="darpan" class="nav-link text-white">Darpan</a></li>
+                    <li><a data-page="sangam" class="nav-link text-white">Sangam</a></li>
+                    <li><a data-page="account" class="nav-link text-white">Account</a></li>
+                    <li><a data-page="editaccount" class="nav-link text-white">EditAccount</a></li>
+                    <li><a data-page="sevasamiti" class="nav-link text-white">SevaSamiti</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white" data-bs-toggle="dropdown">More... <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul class="dropdown-menu text-center bg-transparent">
+                            <li><a data-page="PhotoGallery" class="dropdown-item text-blue">PhotoGallery</a></li>
+                            <!-- <li><a data-page="samajbook" class="dropdown-item text-blue">Samajbook</a></li> -->
+                            <li><a data-page="PIDCard" class="dropdown-item text-blue">PIDCard</a></li>
+                            <li><a data-page="SIDCard" class="dropdown-item text-blue">SIDCard</a></li>
+
+                            <!-- <li><a data-page="shiksha" class="dropdown-item text-blue">शिक्षा व संस्कार</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start text-white bg-dark fw-bold" id="offcanvasMenu" style="background:#0d6efd;">
+        <div class="offcanvas-header bg-info text-white border-bottom">
+
+            <h5><img   src="images/04Logo-Yuva-Mali.png"
+                    alt="Bhoi Mali Samaj Logo" width="180" height="36"></h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li><a data-page="home" class="nav-link text-white active">Home</a></li>
+                <li><a data-page="samajbook" class="nav-link text-white">प्रदर्शिका-2017</a></li>
+                <li><a data-page="darpan" class="nav-link text-white">परिवार-दर्पण</a></li>
+                <li><a data-page="PIDCard" class="nav-link text-white">परिवार परिचय पत्र </a></li>
+                <li><a data-page="student" class="nav-link text-white">विद्यार्थी-दर्पण</a></li>
+                <li><a data-page="SIDCard" class="nav-link text-white">विद्यार्थी परिचय पत्र </a></li>
+                <li><a data-page="sangam" class="nav-link text-white">जीवनसाथी</a></li>
+                <li><a data-page="PhotoGallery" class="nav-link text-white">फोटो गैलेरी</a></li>
+                <li><a data-page="account" class="nav-link text-white">Account</a></li>
+                <li><a data-page="editaccount" class="nav-link text-white">EditAccount</a></li>
+                <li><a data-page="sevasamiti" class="nav-link text-white">SevaSamiti</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white" data-bs-toggle="dropdown">More... <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a data-page="PhotoGallery" class="dropdown-item text-white">PhotoGallery</a></li>
+                        <li><a data-page="PIDCard" class="dropdown-item text-white">PIDCard</a></li>
+                        <li><a data-page="SIDCard" class="dropdown-item text-white">SIDCard</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div id="home" class="content active"></div>
+        <div id="darpan" class="content"></div>
+        <div id="sangam" class="content"></div>
+        <div id="samajbook" class="content"></div>
+        <div id="PhotoGallery" class="content"></div>
+        <div id="student" class="content"></div>
+        <div id="PIDCard" class="content"></div>
+        <div id="SIDCard" class="content"></div>
+        <div id="account" class="content"></div>
+        <div id="editaccount" class="content"></div>
+        <div id="sevasamiti" class="content"></div>
+        <div id="downloadpdf" class="content"></div>
+    </div>
+
+
+    <div id="contact" class="content">
+
+        <main class="contact-page">
+
+            <section class="contact-container">
+
+                <article class="contact-card">
+
+                    <header class="contact-header">
+                        <h1>📍 Reach Us</h1>
+                        <h2>Official Website of Bhoi Mali Samaj | भोई माली समाज राजसमंद </h2>
+
+                        <p>
+                            भोई माली समाज की आधिकारिक वेबसाइट में आपका स्वागत है।
+                            यहाँ समाज की जानकारी, सदस्य, समाचार, कार्यक्रम, गैलरी और संपर्क की जानकारी उपलब्ध है.
+                        </p>
+
+
+                        <p>यदि आपको किसी भी प्रकार की जानकारी, सहायता या सुझाव देना हो तो नीचे दिए गए संपर्क
+                            माध्यमों से हमसे संपर्क करें।</p>
+
+
+
+                    </header>
+
+                    <div class="contact-body">
+
+                        <address style="font-style:normal;">
+
+                            <div class="contact-item">
+                                <div class="contact-icon">🏢</div>
+                                <div>
+                                    <h2>संस्था का नाम</h2>
+                                    <p>भोईमाली समाज (बारह खेडा चौखला) राजसमंद</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h2>कार्यालय का पता</h2>
+                                    <p>C/o हरिशंकर माली, Opp.मंग्लेश्वर महादेव मंदिर, बागोल की वाडिया, बागोल,
+                                        राजसमंद (राज.) 313301</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <h2>मोबाइल नंबर</h2>
+                                    <p><a href="tel:+919667972960">+91 9667972960</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div>
+                                    <h2>ईमेल</h2>
+                                    <p><a href="mailto:Bhoimalisamaj@gmail.com">
+                                            Bhoimalisamaj@gmail.com
+                                        </a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div>
+                                    <h2>कार्यालय समय</h2>
+                                    <p>सोमवार से शनिवार : सुबह 10:00 बजे से शाम 6:00 बजे तक</p>
+                                </div>
+                            </div>
+
+                        </address>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <div id="privacy_policy" class="content">
+
+        <main class="contact-page">
+
+            <section class="contact-container">
+
+                <article class="contact-card">
+
+                    <header class="contact-header">
+                        <h1>🔒 Privacy Policy</h1>
+                        <p>हम आपकी गोपनीयता का सम्मान करते हैं। इस वेबसाइट का उपयोग करते समय आपकी व्यक्तिगत जानकारी
+                            की सुरक्षा हमारी प्राथमिकता है।</p>
+                    </header>
+
+                    <div class="contact-body">
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🛡️</div>
+                            <div>
+                                <h2>व्यक्तिगत जानकारी</h2>
+                                <p>हम केवल वही जानकारी एकत्र करते हैं जो आप स्वेच्छा से हमें प्रदान करते हैं, जैसे
+                                    नाम, मोबाइल नंबर, ईमेल पता या अन्य आवश्यक विवरण।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">📝</div>
+                            <div>
+                                <h2>जानकारी का उपयोग</h2>
+                                <p>आपकी जानकारी का उपयोग केवल संस्था की सेवाएँ प्रदान करने, सूचना साझा करने, सदस्यता
+                                    प्रबंधन तथा आवश्यक संपर्क के लिए किया जाता है।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🔐</div>
+                            <div>
+                                <h2>जानकारी की सुरक्षा</h2>
+                                <p>हम आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए उचित तकनीकी एवं प्रशासनिक उपाय अपनाते
+                                    हैं।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🤝</div>
+                            <div>
+                                <h2>तीसरे पक्ष के साथ साझा करना</h2>
+                                <p>आपकी स्पष्ट अनुमति के बिना आपकी व्यक्तिगत जानकारी किसी तीसरे पक्ष को उपलब्ध नहीं
+                                    कराई जाती, सिवाय कानूनी आवश्यकता के।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🍪</div>
+                            <div>
+                                <h2>Cookies</h2>
+                                <p>वेबसाइट के प्रदर्शन एवं उपयोगकर्ता अनुभव को बेहतर बनाने के लिए Cookies का उपयोग
+                                    किया जा सकता है।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🔄</div>
+                            <div>
+                                <h2>नीति में परिवर्तन</h2>
+                                <p>संस्था समय-समय पर इस Privacy Policy में संशोधन कर सकती है। संशोधित नीति वेबसाइट
+                                    पर प्रकाशित होने के बाद प्रभावी होगी।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h2>संपर्क करें</h2>
+                                <p>यदि Privacy Policy से संबंधित कोई प्रश्न हो, तो कृपया <strong>Reach Us</strong>
+                                    पेज पर उपलब्ध संपर्क विवरण का उपयोग करें।</p>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="terms_conditions" class="content">
+
+        <main class="contact-page">
+
+            <section class="contact-container">
+
+                <article class="contact-card">
+
+                    <header class="contact-header">
+                        <h1>📜 Terms & Conditions</h1>
+                        <p>कृपया इस वेबसाइट का उपयोग करने से पहले निम्नलिखित नियम एवं शर्तों को ध्यानपूर्वक पढ़ें।
+                            वेबसाइट का उपयोग करना इन नियमों एवं शर्तों से आपकी सहमति माना जाएगा।</p>
+                    </header>
+
+                    <div class="contact-body">
+
+                        <section class="contact-item">
+                            <div class="contact-icon">✅</div>
+                            <div>
+                                <h2>वेबसाइट का उपयोग</h2>
+                                <p>यह वेबसाइट समाज के सदस्यों एवं आगंतुकों को जानकारी उपलब्ध कराने के उद्देश्य से
+                                    बनाई गई है। वेबसाइट का उपयोग केवल वैध एवं सामाजिक उद्देश्यों के लिए करें।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">📋</div>
+                            <div>
+                                <h2>जानकारी की शुद्धता</h2>
+                                <p>हम वेबसाइट पर सही एवं अद्यतन जानकारी प्रदान करने का प्रयास करते हैं, लेकिन किसी
+                                    भी जानकारी की पूर्णता या सटीकता की गारंटी नहीं देते।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🛡️</div>
+                            <div>
+                                <h2>उपयोगकर्ता की जिम्मेदारी</h2>
+                                <p>वेबसाइट का उपयोग करते समय सभी लागू कानूनों एवं नियमों का पालन करना उपयोगकर्ता की
+                                    जिम्मेदारी है। किसी भी प्रकार की गलत, भ्रामक या अवैध गतिविधि प्रतिबंधित है।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🚫</div>
+                            <div>
+                                <h2>कॉपीराइट</h2>
+                                <p>वेबसाइट पर उपलब्ध सामग्री, डिज़ाइन, लोगो एवं अन्य जानकारी संस्था की संपत्ति हो
+                                    सकती है। बिना लिखित अनुमति इनके पुनर्प्रकाशन या व्यावसायिक उपयोग की अनुमति नहीं
+                                    है।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🔗</div>
+                            <div>
+                                <h2>बाहरी लिंक</h2>
+                                <p>यदि वेबसाइट पर किसी अन्य वेबसाइट का लिंक उपलब्ध है, तो उस वेबसाइट की सामग्री एवं
+                                    नीतियों के लिए हमारी संस्था जिम्मेदार नहीं होगी।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">🔄</div>
+                            <div>
+                                <h2>नियमों में परिवर्तन</h2>
+                                <p>संस्था बिना पूर्व सूचना के इन नियमों एवं शर्तों में किसी भी समय संशोधन या
+                                    परिवर्तन करने का अधिकार सुरक्षित रखती है।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">⚖️</div>
+                            <div>
+                                <h2>उत्तरदायित्व की सीमा</h2>
+                                <p>वेबसाइट के उपयोग से होने वाली किसी भी प्रत्यक्ष या अप्रत्यक्ष हानि के लिए संस्था
+                                    उत्तरदायी नहीं होगी। उपयोगकर्ता अपने विवेक से वेबसाइट का उपयोग करें।</p>
+                            </div>
+                        </section>
+
+                        <section class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h2>संपर्क</h2>
+                                <p>यदि इन नियमों एवं शर्तों के संबंध में कोई प्रश्न हो, तो कृपया <strong>Reach
+                                        Us</strong> पेज पर उपलब्ध संपर्क जानकारी का उपयोग करें।</p>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-maroon text-white pt-2 pb-2 mt-2">
+        <div class="container ">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-3 col-12 mb-4">
+                    <h6 class="text-uppercase  fw-bold mb-3">Quick Links</h6>
+                    <div class="list-group list-group-flush">
+                        <a data-page="home" class="list-group-item bg-transparent text-white border-0 px-0 py-1">🏡
+                            Home</a>
+                        <a data-page="samajbook" class="list-group-item bg-transparent text-white border-0 px-0 py-1">📚
+                            प्रदर्शिका-2017</a>
+                        <a data-page="PIDCard" class="list-group-item bg-transparent text-white border-0 px-0 py-1">🆔
+                            परिवार परिचय पत्र</a>
+                        <a data-page="student" class="list-group-item bg-transparent text-white border-0 px-0 py-1">🏫
+                            विद्यार्थी</a>
+                        <a data-page="sangam"
+                            class="list-group-item bg-transparent text-white border-0 px-0 py-1">👩‍❤️‍👨 संगम</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 text-center mb-1">
+                    <img src="https://drive.google.com/thumbnail?id=1F_oNCN5v30FJlnJgMJhQFGt7X8TbrFUd&sz=w1000"
+                        alt="Mali Saini Sandeh" width="120px" height="auto" class="mb-1">
+                    <h3 class="fancy-title">भोई माली समाज</h3>
+                    <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+                        <a target="_blank" href="https://www.facebook.com/share/1BDLhAm9t7/"
+                            class="text-white social-icon fb"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://wa.me/9667972960?text=Hello"
+                            class="text-white social-icon wa"><i class="fa fa-whatsapp"></i></a>
+                        <a href="tel:+919667972960" class="text-white social-icon ph"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-3">More Info</h6>
+                    <div class="list-group list-group-flush">
+                        <a data-page="contact" class="list-group-item bg-transparent text-white border-0 px-0 py-1">📍
+                            Reach Us</a>
+
+                        <a data-page="privacy_policy"
+                            class="list-group-item bg-transparent text-white border-0 px-0 py-1">🔒 Privacy Policy</a>
+                        <!-- <a data-page="refund_policy" class="list-group-item bg-transparent text-white border-0 px-0 py-1">💵 Refund Policy</a> -->
+                        <a data-page="terms_conditions"
+                            class="list-group-item bg-transparent text-white border-0 px-0 py-1">📜 Terms &amp;
+                            Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="small text-center mb-0">All Rights Reserved. © 2025-30</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your JS (सबसे आखिर में) -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+
+<style>
+  /* ---- RightBox Button Hover Style ---- */
+.rightBox .list-group-item {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover पर सिर्फ background और text color बदले */
+.rightBox .list-group-item:hover {
+  background: #343a40 !important; /* Dark gray/black background */
+  color: #fff !important;        /* White text */
+}
+
+/* Active पर अलग रंग */
+.rightBox .list-group-item.active {
+  background: #0d6efd !important; /* Bootstrap Blue */
+  color: #fff !important;
+}
+
+/* 👉 Underline effect हटाओ (अगर पहले वाले global underline CSS से लग रहा है तो override करो) */
+.rightBox .list-group-item::after {
+  content: none !important;
+}
+
+
+
+/* Right Box buttons base style */
+.rightBox .list-group-item {
+  background: linear-gradient(45deg, #28a745, #218838); /* default gradient */
+  color: white;
+  border: none;
+  transition: all 0.4s ease;
+  text-decoration: none !important; /* underline हटाओ */
+}
+
+/* Hover effect */
+.rightBox .list-group-item:hover {
+  background: linear-gradient(45deg, #20c997, #0d6efd); /* hover पर gradient */
+  color: #fff;
+  transform: scale(1.03); /* हल्का zoom effect */
+  text-decoration: none !important;
+}
+
+/* Disable state को भी gradient में neutral रखो */
+.rightBox .list-group-item.disabled {
+  background: linear-gradient(45deg, #6c757d, #495057);
+  color: #ddd !important;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+</style>
+
+
+
+
+
+
+<!-- PAGE B -->
+<div class="pageContainer" id="pageB">
+  <div class="box leftBox">
+    <!-- <h3>Page B - Accordion</h3> -->
+    <button class="accordion">Section B1 <span class="right"><span class="dot"></span><span class="arrow">▶</span></span></button>
+    <div class="panel">
+      <button onclick="PageB.showContent(this,'b1')">Page B1</button>
+      <button onclick="PageB.showContent(this,'b2')">Page B2</button>
+      <button onclick="PageB.showContent(this,'b3')">Page B3</button>
+    </div>
+    <button class="accordion">Section B2 <span class="right"><span class="dot"></span><span class="arrow">▶</span></span></button>
+    <div class="panel">
+      <button onclick="PageB.showContent(this,'b4')">Page B4</button>
+      <button onclick="PageB.showContent(this,'b5')">Page B5</button>
+      <button onclick="PageB.showContent(this,'b6')">Page B6</button>
+    </div>
+    <button class="accordion">Section B3 <span class="right"><span class="dot"></span><span class="arrow">▶</span></span></button>
+    <div class="panel">
+      <button onclick="PageB.showContent(this,'b7')">Page B7</button>
+      <button onclick="PageB.showContent(this,'b8')">Page B8</button>
+      <button onclick="PageB.showContent(this,'b9')">Page B9</button>
+    </div>
+  </div>
+
+
+   
+
+  <div class="box midBox">
+    <div id="contentBoxB">👉 Page B Content</div>
+  </div>
+
+
+
+
+
+  <div class="box rightBox">
+    <!-- <p>Right Box B</p> -->
+<div class="col-12">
+        
+        <div class="card order-md-0 p-0 border-black ">
+          <div class="card-header text-center bg-dark">
+            <img src="https://drive.google.com/thumbnail?id=16OzJDqegKYEe36_XE3U2dVCS7o0KZZNq&sz=w1000" class="img-fluid" alt="Bhoi Mali Pradarshika-2017" width="" height=""margin=""/>
+
+          </div>
+
+           <div class="card-body">
+            <div class="list-group list-group-flush text-left ">
+              <!-- <a class="nav-link list-group-item list-group-item-action  bg-success text-white navy disabled"
+                ><i class="fa fa-th-list icon-size-2 letter-110 p-2 " data-page="student"></i>View
+                Editions</a> -->
+
+                <a data-page="samajbook" class="nav-link list-group-item list-group-item-action  bg-success text-white navy "
+                ><i class="fa fa-th-list icon-size-2 letter-110 p-2 "></i>View
+                Editions</a> 
+
+              <!-- <a class=" nav-link list-group-item list-group-item-action bg-warning text-white navy "><i class="fa fa-download icon-size-2 letter-110 p-2 " data-page="darpan"></i>Download</a> -->
+
+                 <a data-page="download" class=" nav-link list-group-item list-group-item-action bg-warning text-white navy disabled"><i class="fa fa-download icon-size-2 letter-110 p-2 "></i>Download</a> 
+
+                <!-- <li><a data-page="darpan" class="nav-link text-white">Darpan</a></li>
+      <li><a data-page="student" class="nav-link text-white">Student</a></li> -->
+
+
+
+              <a class="list-group-item list-group-item-action bg-info text-white navy disabled"
+                href="https://wa.me/9928384138?text=Hello"><i class="fa fa-whatsapp icon-size-2 letter-110  p-2 "></i>Contact
+                Us</a>
+            </div>
+          </div>
+
+          <div class="card-footer p-0 border-0">
+            <img src="https://drive.google.com/thumbnail?id=16Z0R6hm6VRXmeaVkY9v_UFq6NJKKQtge&sz=w1000" class="img-fluid" alt="Bhoi Mali Pradarshika-2017-heding" />
+
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+
+
+
+
+
